@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>CashFlow Privacy Policy</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <a class="skip-link" href="#content">Skip to content</a>
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="brand">
+                <a class="logo" href="index.html" aria-label="CashFlow">
+                    <img src="assets/logo/logo.png" alt="CashFlow logo" class="site-logo">
+                    <span class="logo-text">CashFlow</span>
+                </a>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta"><a class="btn btn-cta" href="index.html#download">Get CashFlow</a></div>
+        </div>
+    </header>
+
+    <main id="content" class="container docs">
+        <h1>CashFlow Privacy Policy</h1>
+        <p>CashFlow is designed to help users manage personal finances with strong control over their own data. By
+            default, the app works offline and stores finance records locally on the user's device. Optional backup and
+            sync features are available for users who choose to use them.</p>
+
+        <section>
+            <h2>Information CashFlow Stores</h2>
+            <p>CashFlow may store the following data inside the app:</p>
+            <ul>
+                <li>wallet or account names</li>
+                <li>category names and selected category icons</li>
+                <li>transactions, amounts, notes, dates, and account links</li>
+                <li>budgets and budget-related settings</li>
+                <li>liabilities, bill schedules, due dates, payment records, and reminders</li>
+                <li>app preferences such as theme or other supported local settings</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Local-First Storage</h2>
+            <p>CashFlow is an offline-first app.</p>
+            <ul>
+                <li>The main app data is stored locally on the device using SQLite.</li>
+                <li>A backend is not required for the app to function.</li>
+                <li>Users can add, edit, review, and manage finance records without being connected to the internet.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Backups and Export / Import</h2>
+            <p>CashFlow includes backup tools that allow users to control their own data movement.</p>
+            <ul>
+                <li>Users can export app data to a JSON backup file.</li>
+                <li>Users can import a compatible JSON backup file back into the app.</li>
+                <li>Importing backup data restores accounts, categories, transactions, and supported app settings.</li>
+                <li>Imported data replaces current in-app finance records, so users should review backup files carefully
+                    before restoring.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Optional Cloud Sync</h2>
+            <p>Cloud sync is not required to use the app. If a user signs in or registers for cloud sync, finance backup
+                data may be uploaded to a Supabase-backed cloud storage setup configured by the app owner. Cloud sync
+                may store account, category, transaction, liability, and supported settings data inside the synced
+                backup payload.</p>
+        </section>
+
+        <section>
+            <h2>Account Information For Cloud Sync</h2>
+            <p>If cloud sync is enabled, the app may process limited account-related information for authentication and
+                account display, including full name, username, and authentication credentials used for sign-in.</p>
+        </section>
+
+        <section>
+            <h2>Notifications and Reminders</h2>
+            <p>CashFlow may request notification permission in order to send reminders such as daily expense reminders
+                and liability or bill reminders. These notifications are used to help users stay aware of budgets,
+                liabilities, and pending payments.</p>
+        </section>
+
+        <section>
+            <h2>User Control</h2>
+            <p>Users remain in control of their data inside CashFlow.</p>
+            <ul>
+                <li>Users can edit or delete finance records directly in the app.</li>
+                <li>Users can export their data.</li>
+                <li>Users can import backups when needed.</li>
+                <li>Users can choose whether to use optional cloud sync.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Data Sharing</h2>
+            <p>CashFlow is not designed as an advertising or social-sharing platform. The app does not need to publicly
+                share user finance records for core functionality.</p>
+        </section>
+
+        <section>
+            <h2>Security Approach</h2>
+            <p>CashFlow is built to reduce unnecessary exposure of user finance data. The app uses local-first storage
+                by default, optional cloud sync, and structured import logic for backups. No digital system can promise
+                absolute security; users should use strong credentials and protect their device and backup files.</p>
+        </section>
+
+        <section>
+            <h2>Children's Privacy</h2>
+            <p>CashFlow is intended as a personal finance tool and is not specifically directed to children.</p>
+        </section>
+
+        <section>
+            <h2>Policy Updates</h2>
+            <p>This privacy policy may be updated over time to reflect app changes, new features, or operational
+                updates.</p>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>For privacy or support questions, contact: <a
+                    href="mailto:support@cashflow.example">support@cashflow.example</a></p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-bar">© <span id="year-privacy"></span> CashFlow</div>
+    </footer>
+
+    <script>
+        document.getElementById('year-privacy').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>
